@@ -1,0 +1,137 @@
+﻿<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Categories </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./Categories.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+        <script src="./Categories.js" > </script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="p-3 bg-dark text-white">
+            <div class="container">
+              <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                  <img src="./images/logo.png" class="d-block mx-lg-auto img-fluid" alt="logo" width="120" height="120" loading="lazy">
+                </a>
+        
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                  <li><a href="./Home Page.html" class="nav-link px-2 text-white">Home</a></li>
+                  <li><a href="./Categories.html" class="nav-link px-2 text-secondary">All Categories</a></li>
+                  <li><a href="./Calendar.html" class="nav-link px-2 text-white">Calendar</a></li>
+                  <li><a href="./Contact us.html" class="nav-link px-2 text-white">Contact Us</a></li>
+                </ul>
+        
+                <form class="col-lg-6 px-3 mb-lg-0" >
+                  <input type= "Search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search"> 
+                </form>
+        
+                <div class="text-end">
+                  <button id="myBtn" type="button" class="btn btn-outline-light autofocus  px-2 ">Login</button>
+                  <script>
+                    document.getElementById("myBtn").addEventListener("click", myFunction);
+                    function myFunction() {
+                      location.href="./SignIn.html";
+                    }
+                  </script>
+                  <button id="myBtn1"type="button" class="btn btn-warning px-2 ">Sign-up</button>
+                  <script>
+                    document.getElementById("myBtn1").addEventListener("click", myFunction);
+                    function myFunction() {
+                      location.href="./SignUP.html";
+                    }
+                  </script>
+                </div>
+              </div>
+            </div>
+          </header>
+          <!-- end Header -->
+
+        <section class="py-5 text-center container">
+            <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="fw-light">Courses Categories</h1>
+                    <p class="lead text-muted">Here you can find your choice of any field or any major and specify the entire course topic that fits your category.  </p>
+                    <p class="lead text-muted">LEARN. WORK. CREATE  </p>
+                    <p>
+                        <button type="button" onclick="location.href='./Categories.html';" id ="btn1" class="btn btn-primary btn-lg px-4 me-md-2">All Courses</button>
+                        <button type="button" onclick="location.href='./Home Page.html';" id ="btn2" class="btn btn-primary btn-lg px-4 me-md-2">Home </button>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="categories">
+                </div>
+            </div>
+        </div>
+<!-- Footer -->
+<footer class="container-fluid bg-grey py-5">
+    <div class="container">
+       <div class="row">
+          <div class="col-md-6">
+             <div class="row">
+                <div class="col-md-6 ">
+                   <div class="logo-part">
+                    <img src="./images/logo.png" class="d-block mx-lg-auto img-fluid" alt="logo" width="120" height="120" loading="lazy">
+                      <p>Educational Center For Online Courses </p>
+                   </div>
+                </div>
+                <div class="col-md-6 px-4">
+                   <h6> About Company</h6>
+                   <p>Participate in your training class from the comfort and safety of your own home or office, and meet your learning requirements at the same time.</p>
+                   <a href="./Contact us.html" class="btn-footer"> Contact Us </a><br>
+                </div>
+             </div>
+          </div>
+          <div class="col-md-6">
+             <div class="row">
+                <div class="col-md-6 px-4">
+                   <h6> Help us</h6>
+                   <div class="row ">
+                      <div class="col-md-6">
+                         <ul>
+                            <li> <a href="./Home Page.html"> Home</a> </li>
+                            <li> <a href="./Calendar.html"> Calendar</a> </li>
+                            <li> <a href="./Contact us.html"> Contact Us </a> </li>
+                         </ul>
+                      </div>
+                   </div>
+                </div>
+                <div class="col-md-6 ">
+                   <h6> Join US </h6>
+                   <div class="social">
+                      <a href="https://fr-fr.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                      <a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                   </div>
+                   <form class="form-footer my-3">
+                      <input type="text"  placeholder="Search...." name="search">
+                      <input type="button" value="Go" >
+                   </form>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>         
+  </footer>
+  <!-- end Footer -->
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script> 
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    </body>
+</html>

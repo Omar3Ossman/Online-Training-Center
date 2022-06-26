@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="./Timeline-profilepage.css">
+    <title>Profile Timeline</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   <!-- Header -->
+   <header class="p-3 bg-dark text-white">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <img id="prof" src="./images/logo.png" class="d-block mx-lg-auto img-fluid" alt="logo" width="120" height="120" loading="lazy">
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="./Home Page.html" class="nav-link px-2 text-white">Home</a></li>
+          <li><a href="./Categories.html" class="nav-link px-2 text-white">All Categories</a></li>
+          <li><a href="./Calendar.html" class="nav-link px-2 text-white">Calendar</a></li>
+          <li><a href="./Contact us.html" class="nav-link px-2 text-white">Contact Us</a></li>
+        </ul>
+
+        <form class="col-lg-6 px-3 mb-lg-0" >
+          <input type= "Search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search"> 
+        </form>
+
+        <div class="text-end">
+
+          <button id="myBtn1"type="button" class="btn btn-warning px-2 ">Log-Out</button>
+          <script>
+            document.getElementById("myBtn1").addEventListener("click", myFunction);
+            function myFunction() {
+              location.href="./Home Page.html";
+            }
+          </script>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- end Header -->
+
+    <div class="container emp-profile">
+        <form method="post">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="profile-img">
+                        <img src="./images/profile.png" alt=""/>
+                        </br>
+                         </br>
+                         <div class="file btn btn-lg btn-primary">
+                            Change Photo
+                            <input type="file" name="file"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="profile-head">
+                                <h5>
+                                    Angela Webster
+                                </h5>
+                                <h6>
+                                    Web Developer and Designer
+                                </h6>
+                                <p class="proile-rating">RANKINGS : <span>8/10</span></p>
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./ProfilePage.html" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="false">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active"  id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true">Timeline</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="profile-work">
+                        </br>
+                        </br>
+                        <p> <b> Registered Courses</b> </p>
+                        <div class="courses">
+                        <a href="">Intro to embedded</a><br/>
+                        <a href="">Compilers</a><br/>
+                        <a href="">Internet Programming</a>
+                        </div>
+                        </br>
+                        </br>
+                        <p> <b>SKILLS</b></p>
+                        <div class="courses">
+                        <a href="">Web Designer</a><br/>
+                        <a href="">Web Developer</a><br/>
+                        <a href="">WordPress</a><br/>
+                        <a href="">WooCommerce</a><br/>
+                        <a href="">PHP, .Net</a><br/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="tab-content profile-tab" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <main class="card">
+                                <section class="card__header">
+                                <h3>Thursday 7th</h3>
+                                <h3>June 2022</h3>
+                                </section>
+                                <section class="card__body">
+                                <ul class="card__body--days">
+                                <li>mon</li>
+                                <li>tue</li>
+                                <li>wed</li>
+                                <li>thu</li>
+                                <li>fri</li>
+                                <li>sat</li>
+                                <li>sun</li>
+                                </ul>
+                                <ul class="card__body--dates">
+                                <li class="prev">30</li>
+                                <li class="prev">31</li>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li>6</li>
+                                <li class="active">7</li>
+                                <li>8</li>
+                                <li>9</li>
+                                <li>10</li>
+                                <li>11</li>
+                                <li>12</li>
+                                <li>13</li>
+                                <li>14</li>
+                                <li>15</li>
+                                <li class="circle orange">16 <span>5</span></li>
+                                <li>17</li>
+                                <li>18</li>
+                                <li class="circle purple">19 <span>6</span></li>
+                                <li>20</li>
+                                <li>21</li>
+                                <li>22</li>
+                                <li>23</li>
+                                <li>24</li>
+                                <li>25</li>
+                                <li>26</li>
+                                <li>27</li>
+                                <li>28</li>
+                                <li>29</li>
+                                <li>30</li>
+                                <li>31</li>
+                                <li class="next">1</li>
+                                <li class="next">2</li>
+                                </ul>
+                                </section>
+                                <div class="card__footer">
+                                <p>11:35 am</p>
+                                <a href="#" class="add">+</a>
+                                <p>12<sup>o</sup> C</p>
+                                </div>
+                                </main>
+                                               
+                                            
+                    </div>
+                </div>
+            </div>
+        </form>           
+    </div>
+</div>
+    <!-- Footer -->
+<footer class="container-fluid bg-grey py-5">
+    <div class="container">
+       <div class="row">
+          <div class="col-md-6">
+             <div class="row">
+                <div class="col-md-6 ">
+                   <div class="logo-part">
+                    <img src="./images/logo.png" class="d-block mx-lg-auto img-fluid" alt="logo" width="120" height="120" loading="lazy">
+                      <p>Educational Center For Online Courses </p>
+                   </div>
+                </div>
+                <div class="col-md-6 px-4" id="par">
+                   <h6> About Company</h6>
+                   <p>Participate in your training class from the comfort and safety of your own home or office, and meet your learning requirements at the same time.</p>
+                   <a href="./Contact us.html" class="btn-footer"> Contact Us </a><br>
+                </div>
+             </div>
+          </div>
+          <div class="col-md-6">
+             <div class="row">
+                <div class="col-md-6 px-4">
+                   <h6> Help us</h6>
+                   <div class="row ">
+                      <div class="col-md-6">
+                         <ul>
+                            <li> <a href="./Home Page.html"> Home</a> </li>
+                            <li> <a href="./Calendar.html"> Calendar</a> </li>
+                            <li> <a href="./Contact us.html"> Contact Us </a> </li>
+                         </ul>
+                      </div>
+                   </div>
+                </div>
+                <div class="col-md-6 ">
+                   <h6> Join US </h6>
+                   <div class="social">
+                      <a href="https://fr-fr.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                      <a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                   </div>
+                   <form class="form-footer my-3">
+                      <input type="text"  placeholder="Search...." name="search">
+                      <input type="button" value="Go" >
+                   </form>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>         
+  </footer>  
+  <!-- end Footer -->
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,455 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home Page</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./home page.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+        
+    </head>
+    <body>
+      <!-- Header -->
+        <header class="p-3 bg-dark text-white">
+            <div class="container">
+              <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                  <img src="./images/logo.png" class="d-block mx-lg-auto img-fluid" alt="logo" width="120" height="120" loading="lazy">
+                </a>
+        
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                  <li><a href="./Home Page.html" class="nav-link px-2 text-secondary">Home</a></li>
+                  <li><a href="./Categories.html" class="nav-link px-2 text-white">All Categories</a></li>
+                  <li><a href="./Calendar.html" class="nav-link px-2 text-white">Calendar</a></li>
+                  <li><a href="./Contact us.html" class="nav-link px-2 text-white">Contact Us</a></li>
+                </ul>
+        
+                <form class="col-lg-6 px-3 mb-lg-0" >
+                  <input type= "Search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search"> 
+                </form>
+        
+                <div class="text-end">
+                  <button id="myBtn" type="button" class="btn btn-outline-light autofocus  px-2 ">Login</button>
+                  <script>
+                    document.getElementById("myBtn").addEventListener("click", myFunction);
+                    function myFunction() {
+                      location.href="./SignIn.html";
+                    }
+                  </script>
+                  <button id="myBtn1"type="button" class="btn btn-warning px-2 ">Sign-up</button>
+                  <script>
+                    document.getElementById("myBtn1").addEventListener("click", myFunction);
+                    function myFunction() {
+                      location.href="./SignUP.html";
+                    }
+                  </script>
+                </div>
+              </div>
+            </div>
+          </header>
+          <!-- end Header -->
+          
+                <div class="container col-xxl-8 px-4 py-5">
+                    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                    <div class="col-10 col-sm-8 col-lg-6">
+                        <img src="./images/pic1.jpg" class="d-block mx-lg-auto img-fluid" alt="Picture1" width="1000" height="1200" loading="lazy">
+                    </div>
+                    <div class="col-lg-6">
+                        <h1 class="display-5 fw-bold lh-1 mb-3"> 20% OFF on All Courses when you Sign Up for the First Time! </h1>
+                        <p class="lead"> Participate in your training class from the comfort and safety of your own home or office, and meet your learning requirements at the same time.</p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <button type="button" onclick="location.href='./Categories.html';" id ="btnbrowse" class="btn btn-primary btn-lg px-4 me-md-2">Browse Courses</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+  
+               
+<!--PRICINGGGGG-->
+<style>
+   #pricing{
+margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+}
+</style>
+<element id = "pricing">
+   <style>
+      .pricing-table {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #ffffff;
+}
+   </style>
+<div class="pricing-table">
+<style>
+   .pricing-table .ptable-item {
+  width: 33.33%;
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+.pricing-table .ptable-item {
+  width: 33.33%;
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 992px) {
+  .pricing-table .ptable-item {
+    width: 33.33%;
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing-table .ptable-item {
+    width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .pricing-table .ptable-item {
+    width: 100%;
+  }
+}
+
+.pricing-table .ptable-single {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.pricing-table .ptable-header,
+.pricing-table .ptable-body,
+.pricing-table .ptable-footer {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.pricing-table .ptable-status ,
+.pricing-table .ptable-title,
+.pricing-table .ptable-price,
+.pricing-table .ptable-description,
+.pricing-table .ptable-action {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.pricing-table .ptable-single {
+  background: #f6f8fa;
+}
+
+.pricing-table .ptable-single:hover {
+  box-shadow: 0 0 10px #999999;
+}
+
+.pricing-table .ptable-header {
+  margin: 0 30px;
+  padding: 30px 0 45px 0;
+  width: auto;
+  background: #2A293E;
+}
+
+.pricing-table .ptable-header::before,
+.pricing-table .ptable-header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid #f6f8fa;
+}
+
+.pricing-table .ptable-header::before {
+  right: 50%;
+  border-right: 250px solid transparent;
+}
+
+.pricing-table .ptable-header::after {
+  left: 50%;
+  border-left: 250px solid transparent;
+}
+
+.pricing-table .ptable-item.featured-item .ptable-header {
+  background: #FFC107;
+}
+
+.pricing-table .ptable-status {
+  margin-top: -30px;
+}
+
+.pricing-table .ptable-status span {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+  padding: 5px 0;
+  text-align: center;
+  color:#FFC107;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  background: #2A293E;
+}
+
+.pricing-table .ptable-status span::before,
+.pricing-table .ptable-status span::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 10px solid #FFC107;
+}
+
+.pricing-table .ptable-status span::before {
+  right: 50%;
+  border-right: 25px solid transparent;
+}
+
+.pricing-table .ptable-status span::after {
+  left: 50%;
+  border-left: 25px solid transparent;
+}
+
+.pricing-table .ptable-title h2 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.pricing-table .ptable-price h2 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 45px;
+  font-weight: 700;
+  margin-left: 15px;
+}
+
+.pricing-table .ptable-price h2 small {
+  position: absolute;
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 16px;
+  margin-left: -15px;
+}
+
+.pricing-table .ptable-price h2 span {
+  margin-left: 3px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.pricing-table .ptable-body {
+  padding: 20px 0;
+}
+
+.pricing-table .ptable-description ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pricing-table .ptable-description ul li {
+  color: #2A293E;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding: 7px;
+  border-bottom: 1px solid #dedede;
+}
+
+.pricing-table .ptable-description ul li:last-child {
+  border: none;
+}
+
+.pricing-table .ptable-footer {
+  padding-bottom: 30px;
+}
+
+.pricing-table .ptable-action a {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #FFC107;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-decoration: none;
+  background: #2A293E;
+}
+
+.pricing-table .ptable-action a:hover {
+  color: #2A293E;
+  background: #FFC107;
+}
+
+.pricing-table .ptable-item.featured-item .ptable-action a {
+  color: #2A293E;
+  background: #FFC107;
+}
+
+.pricing-table .ptable-item.featured-item .ptable-action a:hover {
+  color: #FFC107;
+  background: #2A293E;
+}
+</style>
+   <div class="ptable-item">
+     <div class="ptable-single">
+       <div class="ptable-header">
+         <div class="ptable-title">
+           <h2>Silver</h2>
+         </div>
+         <div class="ptable-price">
+           <h2><small>$</small>99<span>/ M</span></h2>
+         </div>
+       </div>
+       <div class="ptable-body">
+         <div class="ptable-description">
+           <ul>
+             <li>one course</li>
+             <li>No certificate</li>
+             <li>Limieted assessments</li>
+             <li>One month</li>
+           </ul>
+         </div>
+       </div>
+       <div class="ptable-footer">
+         <div class="ptable-action">
+           <a href="">Buy Now</a>
+         </div>
+       </div>
+     </div>
+   </div>
+ 
+   <div class="ptable-item featured-item">
+     <div class="ptable-single">
+       <div class="ptable-header">
+         <div class="ptable-status">
+           <span>Hot</span>
+         </div>
+         <div class="ptable-title">
+           <h2>Gold</h2>
+         </div>
+         <div class="ptable-price">
+           <h2><small>$</small>199<span>/ M</span></h2>
+         </div>
+       </div>
+       <div class="ptable-body">
+         <div class="ptable-description">
+           <ul>
+             <li>Five courses</li>
+             <li>Certified</li>
+             <li>Assments and projects</li>
+             <li>Six months</li>
+           </ul>
+         </div>
+       </div>
+       <div class="ptable-footer">
+         <div class="ptable-action">
+           <a href="">Buy Now</a>
+         </div>
+       </div>
+     </div>
+   </div>
+ 
+   <div class="ptable-item">
+     <div class="ptable-single">
+       <div class="ptable-header">
+         <div class="ptable-title">
+           <h2>Platinum</h2>
+         </div>
+         <div class="ptable-price">
+           <h2><small>$</small>299<span>/ M</span></h2>
+         </div>
+       </div>
+       <div class="ptable-body">
+         <div class="ptable-description">
+           <ul>
+             <li>Unlimited number of courses</li>
+             <li>Certified</li>
+             <li>Assessments, projects and recorded classes</li>
+             <li>Two years</li>
+           </ul>
+         </div>
+       </div>
+       <div class="ptable-footer">
+         <div class="ptable-action">
+           <a href="">Buy Now</a>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+</element>
+
+
+<!--IFRAMMMEEEE-->
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.0342059840737!2d31.276622015115517!3d30.06455398187492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583f9f22630521%3A0x7b29c0a5e2c9469b!2sFaculty%20of%20Engineering%20Ain%20Shams%20University!5e0!3m2!1sen!2seg!4v1655589246848!5m2!1sen!2seg" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<!-- Footer -->
+<footer class="container-fluid bg-grey py-5">
+  <div class="container">
+     <div class="row">
+        <div class="col-md-6">
+           <div class="row">
+              <div class="col-md-6 ">
+                 <div class="logo-part">
+                  <img src="./images/logo.png" class="d-block mx-lg-auto img-fluid" alt="logo" width="120" height="120" loading="lazy">
+                    <p>Educational Center For Online Courses </p>
+                 </div>
+              </div>
+              <div class="col-md-6 px-4">
+                 <h6> About Company</h6>
+                 <p>Participate in your training class from the comfort and safety of your own home or office, and meet your learning requirements at the same time.</p>
+                 <a href="./Contact us.html" class="btn-footer"> Contact Us </a><br>
+              </div>
+           </div>
+        </div>
+        <div class="col-md-6">
+           <div class="row">
+              <div class="col-md-6 px-4">
+                 <h6> Help us</h6>
+                 <div class="row ">
+                    <div class="col-md-6">
+                       <ul>
+                          <li> <a href="./Home Page.html"> Home</a> </li>
+                          <li> <a href="./Calendar.html"> Calendar</a> </li>
+                          <li> <a href="./Contact us.html"> Contact Us </a> </li>
+                       </ul>
+                    </div>
+                 </div>
+              </div>
+              <div class="col-md-6 ">
+                 <h6> Join US </h6>
+                 <div class="social">
+                    <a href="https://fr-fr.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                 </div>
+                 <form class="form-footer my-3">
+                    <input type="text"  placeholder="Search...." name="search">
+                    <input type="button" value="Go" >
+                 </form>
+              </div>
+           </div>
+        </div>
+     </div>
+  </div>         
+</footer>
+<!-- end Footer -->
+          
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script> 
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    </body>
+</html>
